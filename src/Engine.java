@@ -36,17 +36,18 @@ public class Engine extends JPanel implements KeyListener{
 
     public void loadImages() {
         try {
-            this.block = ImageIO.read(new File("BlockCSS.png"));
-            this.block2 = ImageIO.read(new File("BlockCSS2.png"));
-            this.hero = ImageIO.read(new File("hero.png"));
-            this.enemy = ImageIO.read(new File("enemy.png"));
-            this.invis = ImageIO.read(new File("invis.png"));
-            this.freeze = ImageIO.read(new File("freeze.png"));
-            this.heroinvis = ImageIO.read(new File("heroinvis.png"));
-            this.heroteleport = ImageIO.read(new File("heroteleport.png"));
-            this.enemyfreeze = ImageIO.read(new File("enemyfreeze.png"));
-            this.coin = ImageIO.read(new File("coin.png"));
-            this.doublecoin = ImageIO.read(new File("doublecoin.png"));
+            String image_dir = "images/";
+            this.block = ImageIO.read(new File(image_dir + "BlockCSS.png"));
+            this.block2 = ImageIO.read(new File(image_dir + "BlockCSS2.png"));
+            this.hero = ImageIO.read(new File(image_dir + "hero.png"));
+            this.enemy = ImageIO.read(new File(image_dir + "enemy.png"));
+            this.invis = ImageIO.read(new File(image_dir + "invis.png"));
+            this.freeze = ImageIO.read(new File(image_dir + "freeze.png"));
+            this.heroinvis = ImageIO.read(new File(image_dir + "heroinvis.png"));
+            this.heroteleport = ImageIO.read(new File(image_dir + "heroteleport.png"));
+            this.enemyfreeze = ImageIO.read(new File(image_dir + "enemyfreeze.png"));
+            this.coin = ImageIO.read(new File(image_dir + "coin.png"));
+            this.doublecoin = ImageIO.read(new File(image_dir + "doublecoin.png"));
         } catch (IOException i) {
             System.out.println("Error: " + i.getMessage());
         }

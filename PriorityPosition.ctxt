@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=PriorityPosition
-comment1.params=priority\ position
-comment1.target=PriorityPosition(int,\ Position)
-comment2.params=other
-comment2.target=int\ compareTo(PriorityPosition)
-numComments=3
